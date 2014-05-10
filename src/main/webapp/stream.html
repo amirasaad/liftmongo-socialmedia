@@ -1,0 +1,51 @@
+<div data-lift="surround?with=base-wrap;at=content">
+	<lift:head>
+	<title data-lift="Menu.title">Social Media: %*%</title>
+</lift:head>
+
+<div data-lift="Notices"></div>
+
+<form class="lift:Form.ajax?class=inline">
+	<div class="lift:PostForm.add">
+
+		<fieldset>
+			<div class="input-group">
+				<div class="span-12">
+					<input name="body" id="body" class="form-control"
+					placeholder="What do you want to say?" autofocus="autofocus">
+				</div>
+
+				<span class="input-group-btn">
+					<button id="btn" class="btn btn-success btn-lg" type="submit">Share!</button>
+				</span>
+
+			</div>
+		</fieldset>
+	</div>
+
+</form>
+<span data-lift="PostForm.initComet"></span> <br>
+
+
+
+<div class="lift:comet?type=PostActor">
+	<h3><span class="label label-primary"><span class="count"></span> Posts</span></h3>
+	<div class="posts">
+		<ul class="media-list">
+			<li class="media box">
+				<a class="pull-left" href="#">
+					<span class="img"></span>
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading"><a><span class="username"> </span></a></h4>
+					<blockquote>
+						<p><span class="body"></span></p>
+						<small><span class="time"></small>
+					</blockquote>
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
